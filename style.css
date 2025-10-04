@@ -113,8 +113,8 @@ body {
 }
 
 .skull-large {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
     stroke: #dc2626;
     animation: pulse 2s infinite;
 }
@@ -146,12 +146,14 @@ body {
 .hero-info {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;           /* Permet de passer à la ligne suivante si nécessaire */
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    justify-content: center;   /* Centre les éléments sur chaque ligne */
+    gap: 2rem;                 /* Garde l’espace entre les éléments */
     max-width: 768px;
     margin: 0 auto;
 }
+
 
 .info-card {
     background-color: rgba(23, 23, 23, 0.6);
@@ -230,8 +232,9 @@ body {
 }
 
 .features-grid {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 4rem 3rem;
     max-width: 1152px;
     margin: 0 auto;
@@ -273,6 +276,9 @@ body {
 .feature-icon svg {
     width: 5rem;
     height: 5rem;
+}
+.icon-concept{
+    color : white
 }
 
 .badge {
