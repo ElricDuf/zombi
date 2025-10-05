@@ -428,3 +428,326 @@ body {
 .inscription-content{
     text-align: center;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Règles page - Header text */
+.rules-intro-text {
+    text-align: center;
+    color: #e5e5e5;
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    padding: 0 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+}
+
+/* Survivants Section - Blue Theme */
+.section-header-survivor h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #3b82f6;
+    border-bottom: 2px solid rgba(59, 130, 246, 0.4);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.rules-box-survivor {
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.15) 0%, rgba(17, 24, 39, 0.8) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+    transition: all 0.3s ease;
+}
+
+.rules-box-survivor:hover {
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.15);
+}
+
+.rules-box-survivor .rule-number {
+    color: #60a5fa;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+}
+
+.rules-box-survivor .rules-list li {
+    color: #e0e7ff;
+    margin-bottom: 1.5rem;
+}
+
+.rules-box-survivor .rules-list li p {
+    line-height: 1.8;
+}
+
+/* Zombies Section - Red Theme */
+.section-header-zombie h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #dc2626;
+    border-bottom: 2px solid rgba(220, 38, 38, 0.4);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.rules-box-zombie {
+    background: linear-gradient(135deg, rgba(127, 29, 29, 0.15) 0%, rgba(17, 24, 39, 0.8) 100%);
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(220, 38, 38, 0.1);
+    transition: all 0.3s ease;
+}
+
+.rules-box-zombie:hover {
+    border-color: rgba(220, 38, 38, 0.5);
+    box-shadow: 0 8px 16px rgba(220, 38, 38, 0.15);
+}
+
+.rules-box-zombie .rule-number {
+    color: #ef4444;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}
+
+.rules-box-zombie .rules-list li {
+    color: #fecaca;
+    margin-bottom: 1.5rem;
+}
+
+.rules-box-zombie .rules-list li p {
+    line-height: 1.8;
+}
+
+/* Common rules list styling */
+.rules-list {
+    list-style: none;
+}
+
+.rules-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s ease;
+}
+
+.rules-box-survivor .rules-list li:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.rules-box-zombie .rules-list li:hover {
+    background-color: rgba(220, 38, 38, 0.1);
+}
+
+.rules-list li:last-child {
+    margin-bottom: 0;
+}
+
+.rules-box-zombie {
+    margin-bottom: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .rules-intro-text {
+        font-size: 1rem;
+        margin-top: rem;
+    }
+
+    .section-header-survivor h2,
+    .section-header-zombie h2 {
+        font-size: 1.75rem;
+    }
+
+    .rules-box-survivor,
+    .rules-box-zombie {
+        padding: 1.5rem;
+    }
+
+    .rule-number {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+/* INSCRIPTION */
+.inscription-content {
+    text-align: center;
+}
+
+.inscription-box {
+    background: linear-gradient(135deg, rgba(127, 29, 29, 0.15) 0%, rgba(17, 24, 39, 0.8) 100%);
+    border: 1px solid rgba(127, 29, 29, 0.3);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    margin-top: 3rem;
+    box-shadow: 0 4px 6px rgba(220, 38, 38, 0.1);
+    transition: all 0.3s ease;
+}
+
+.inscription-box:hover {
+    border-color: rgba(220, 38, 38, 0.5);
+    box-shadow: 0 8px 16px rgba(220, 38, 38, 0.15);
+}
+
+.inscription-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.icon-circle {
+    background-color: #262626;
+    border: 2px solid rgba(220, 38, 38, 0.3);
+    border-radius: 50%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skull-inscription {
+    width: 4rem;
+    height: 4rem;
+}
+
+.inscription-text {
+    color: #d4d4d4;
+    font-size: 1.25rem;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+}
+
+.email-box {
+    background-color: #262626;
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 0 auto 2rem;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.mail-icon {
+    color: #ef4444;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.email-link {
+    color: #ef4444;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email-link:hover {
+    color: #dc2626;
+}
+
+.download-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background-color: #dc2626;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #b91c1c;
+    box-shadow: 0 8px 16px rgba(220, 38, 38, 0.3);
+    transform: scale(1.05);
+}
+
+.download-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.inscription-note {
+    color: #a3a3a3;
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+.footer {
+    background-color: #000;
+    border-top: 1px solid rgba(127, 29, 29, 0.3);
+    padding: 2rem 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    color: #a3a3a3;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.875rem;
+    }
+
+    .inscription-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .inscription-text {
+        font-size: 1rem;
+    }
+
+    .email-link {
+        font-size: 1rem;
+    }
+
+    .download-button {
+        font-size: 1rem;
+        padding: 0.875rem 1.5rem;
+    }
+}
+
